@@ -3,7 +3,6 @@ from DB import words
 def word_lodory():
     word_loc = words[random.randint(0, len(words))]
     return word_loc
-# print(word_lodory(words))
 
 
 def empty_func(word,start_point = 0):
@@ -32,8 +31,7 @@ def get_user_leter(empty_word,mistakes, wrong_leters):
 
 def game_init():
     mistakes = 7
-    new_word =  'test'
-    # word_lodory()
+    new_word = word_lodory()
     user_all_word = ''
     wrong_leters = []
     for i in range(7):
@@ -58,4 +56,3 @@ def game_init():
   
   
     
-# print(leter_examination('H','Hangman','',0))
