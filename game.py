@@ -5,14 +5,6 @@ def word_lodory():
     return word_loc
 
 
-def empty_func(word,start_point = 0):
-    underscore = ''
-    for i in range(len(word)):
-        if i >= start_point:
-            underscore += ' _'
-        else: underscore += word[i]
-    return underscore
-
 
 def leter_examination(leter, word, ):
     print('list: ',list(word))
@@ -59,8 +51,9 @@ def game_init():
         if len(user_all_word) == len(new_word):
             print(f'!!! congagoletion !!!\n   The leter is: {new_word}')
             return ' '
-        
-
+        if  mistakes == 0:      
+            print(f'You lost \nyou run out of guses')
+            return ' '
         
   
   
