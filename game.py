@@ -21,6 +21,8 @@ def leter_examination(leter, word, user_all_word, loc = 0):
 def get_user_leter(empty_word,mistakes, wrong_leters):
     while True:
         users_leter = input(f'enter leter \n {empty_word}\nlast mistakes {mistakes}\nwrong leters: {wrong_leters}: ')
+        if users_leter in wrong_leters:
+            continue
         if len(users_leter) == 1 and users_leter.isalpha():
             return users_leter
         print('enter only one str leter ')
