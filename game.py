@@ -54,7 +54,6 @@ def game_init():
             user_all_word += (len([i for i, val in enumerate(list(new_word)) if val == users_leter]) * users_leter)
             print
         elif not result: 
-            # indexes = 
             wrong_leters.append(users_leter)
             mistakes -= 1
         if len(user_all_word) == len(new_word):
@@ -63,7 +62,6 @@ def game_init():
         
 
         
-# print(word_to_print('result',))
   
   
     
